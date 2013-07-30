@@ -47,11 +47,11 @@
     - 6714
     - 6601
  #----启动的shard的数，每个shard为一个solr实例，结合cpu个数和内存进行配置，10台48G内存配置60----
- higo.shards.count: 60
+ higo.shards.count: 5
  #----分配给merger server的端口，建议每台机器分配一个merger server----
  higo.merge.ports: "6601,6602,6603,6604,6605,6606,6607,6608,6609,6610"
  #----启动的merger server的worker数量，建议根据机器数量设定----
- higo.mergeServer.count: 8
+ higo.mergeServer.count: 1
  #----分配给实时数据源的端口，该功能在开发中，预留接口----
  higo.realtime.ports: "6501,6502,6503,6504,6505,6506,6507,6508,6509,6510"
  #----启动实时数据源的worker数量,预留接口----
